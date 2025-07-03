@@ -1,39 +1,73 @@
-# Indian-Parliament-Election-Analysis-2024
-Indian Parliament Election Analysis 2024
+# 🗳️ Indian Parliament Election Analysis 2024 – SQL Project
 
-Project Overviews :-
-This project is a hands-on data analytics solution using SQL to process 
-and analyze data from CSV files.It demonstrates how to perform full-cycle
-data analysis:from importing CSVs, building queries,to generating insights.
+This project is a hands-on **SQL-based data analysis** of the **2024 Indian Parliament (Lok Sabha) Election**, 
+demonstrating end-to-end skills from data import to insight generation. It uses publicly available CSV data,
+transformed and queried using **Microsoft SQL Server (MSSQL)**.
 
-**Skills Covered**
-  - SQL Joins, Aggregations, Window Functions
-  - CTEs (Common Table Expressions)
-  - Data Cleaning using SQL
-  - Importing CSV into SQL tables
+---
 
- **Tools & Technologies**
-  - MSSQL
+## 📦 Project Overview
 
+This project simulates a real-world data analytics task:
+- Importing and cleaning election-related CSV files
+- Structuring normalized SQL tables
+- Writing analytical queries using **Joins**, **CTEs**, **Aggregates**, and **Subqueries**
+- Extracting state-wise, party-wise, and candidate-level insights
 
-**Key SQL Concepts Used**
-      INNER JOIN, LEFT JOIN
-      Aggregations: SUM(), AVG(), COUNT()
-      GROUP BY & ORDER BY
-      CTEs and Subqueries
-      Date/time filtering
-      Data transformation
+---
 
-## 🔍 Sample Insights 
-  - Total Parliament Seats = 543
-  - NDA Allaince seats winning Toatl  = 292
-  - I.N.D.I.A Allaince seats winning Toatl  = 234
-  - Run query to find out statewise Party winning seats :
-                    example 'Andhra Pradesh'  TDP = 16 ,YSRCP = 4
-                                              BJP = 4, Janseva Party = 2
-  - TOP 2 Candidate who get Max EVM votes :- 1) Rakibul Hussian, Dhubri, Assam (1468549)
-                                              2) Shankar Lalwani, Indore,Madhya Pradesh(1223746)
-  -  Maximum Number Of candidates stand for election 
-     TOP 2 states  1) Maharashtra 1169
-                   2) Tamil Nadu 989 
+## 🧰 Tools & Technologies
 
+- 🛠 **SQL Server Management Studio (SSMS)**
+- 📂 CSV file ingestion
+- 🧹 Data cleaning and transformation in SQL
+
+---
+
+## 🧠 Skills Covered
+
+- SQL Joins (INNER JOIN, LEFT JOIN)
+- Aggregations: `SUM()`, `COUNT()`, `AVG()`
+- Common Table Expressions (CTEs)
+- Subqueries & Window Functions
+- GROUP BY, ORDER BY
+- Date/time filters & Data formatting
+- Relational schema design
+
+---
+
+## 🗃️ Data Overview
+
+The project uses **5 CSV files**:
+- Constituency-wise candidate results
+- Party-wise performance
+- State-wise results
+- Voter and EVM data
+- General state metadata
+
+These were imported into SQL Server and normalized using `CREATE TABLE` and `BULK INSERT`.
+
+---
+
+## 🔍 Sample Insights
+
+- 🪪 **Total Parliament Seats**: `543`
+- 🟠 **NDA Alliance Wins**: `292`
+- 🔵 **I.N.D.I.A Alliance Wins**: `234`
+
+### 🗺️ State-Wise Party Results
+> Example: **Andhra Pradesh**  
+> TDP: `16`, YSRCP: `4`  
+> BJP: `4`, Janseva Party: `2`
+
+### 🏆 Top EVM Vote-Winning Candidates
+1. **Rakibul Hussian** – Dhubri, Assam: `1,468,549` votes  
+2. **Shankar Lalwani** – Indore, MP: `1,223,746` votes
+
+### 📈 States with Most Contesting Candidates
+1. **Maharashtra** – `1,169` candidates  
+2. **Tamil Nadu** – `989` candidates
+
+---
+
+## 📐 Project Structure
